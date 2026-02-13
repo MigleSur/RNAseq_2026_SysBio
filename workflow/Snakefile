@@ -1,0 +1,13 @@
+import os
+import pandas as pd
+
+configfile: "config/config.yaml"
+
+include: "rules/qc.smk"
+
+
+# The 'all' rule defines the final targets of your pipeline
+rule all:
+   input:
+       expand("results/fastqc/{sample}_{stage}_fastqc.html", sample=config["samples"], stage=["raw", "filtered"])
+
