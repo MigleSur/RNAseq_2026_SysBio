@@ -29,4 +29,3 @@ rule fastp:
        -j {output.json}
        """
 
-

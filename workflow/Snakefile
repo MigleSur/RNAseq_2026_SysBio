@@ -4,10 +4,11 @@ import pandas as pd
 configfile: "config/config.yaml"
 
 include: "rules/qc.smk"
-
+include: "rules/alignment.smk"
+include: "rules/reportQC.smk"
 
 # The 'all' rule defines the final targets of your pipeline
 rule all:
    input:
-       expand("results/fastqc/{sample}_{stage}_fastqc.html", sample=config["samples"], stage=["raw", "filtered"])
+       "results/multiqc/multiqc_report.html"
 
