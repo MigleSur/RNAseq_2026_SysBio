@@ -4,4 +4,6 @@ samples: ["SRR15618897", "SRR15618896"]
 
 input_path: "/opt/home/migle/raw_data_exercise_20260218"
 
-genome_index: "/opt/home/migle/RNAseq_2026_SysBio"
+genome_index: "/opt/home/migle/shared/Mus_musculus.GRCm39/genome"
+
+gtf_file: "/opt/home/migle/shared/Mus_musculus.GRCm39/genome.gtf"
