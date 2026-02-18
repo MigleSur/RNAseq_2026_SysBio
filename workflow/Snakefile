@@ -12,6 +12,4 @@ include: "rules/count.smk"
 rule all:
    input:
        "results/multiqc/multiqc_report.html",
-       expand("results/counts/{sample}.featureCounts.txt",
-        sample=config["samples"])
 
