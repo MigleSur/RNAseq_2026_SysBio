@@ -1,0 +1,10 @@
+name: rnaseq_preprocess
+channels:
+ - conda-forge
+ - bioconda
+dependencies:
+ - fastqc
+ - bioconda::samtools
+ - bioconda::fastp=0.24
+ - bioconda::hisat2
+ - bioconda::subread=2.0.8
